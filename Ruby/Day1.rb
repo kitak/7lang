@@ -5,8 +5,4 @@ puts "index = #{index}"
 
 10.times {puts 'Eric'}
 
-x = 0
-while x < 10
-  x = x + 1
-  puts "This is sentence number #{x}"
-end
+10.times {|count| puts "This is sentence number #{count+1}"}
