@@ -1,0 +1,14 @@
+Q. Find out how to access files with and without code blocks. What is the benefit of the code block?
+A. File.open and File.new are roughly equiv'   Open offers the block which doesn't return the file handle - it closes the file, thus eliminating the need for you to manage that.  (unless you wanted to leave it open, of course.)
+
+Q. How would you translate a hash to an array? Can you translate arrays to hashes?
+A. Hash.to_a ( or you could use Hash.shift -but it's destructive - or Hash.sort)
+From Array to Hash might work as Hash[*myarray.flatten]  (see: http://stackoverflow.com/questions/39567/what-is-the-best-way-to-convert-an-array-to-a-hash-in-ruby )
+
+Q. Can you iterate through a hash?
+A. Yes - for instance:
+myHash.each {|key,value| print key, " is ",value, "\n"}
+
+Q. You can use Ruby arrays as stacks. What other common data structures do arrays support?
+A. Kinda supports Set (via uniq), but there's a Set specific class for that.
+
