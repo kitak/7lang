@@ -35,3 +35,6 @@ myAverage := method( myList,
 
 myAverage(list(1,2,3,4)) println
 myAverage(list(1,2,3,"four")) println
+
+"\n------------------\n" println
+
